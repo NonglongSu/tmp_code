@@ -1,0 +1,802 @@
+[
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG------AAT"
+    },
+    "weight": 0.0749673,
+    "log_weight": -2.5907
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG---A---AT"
+    },
+    "weight": 0.00807844,
+    "log_weight": -4.81856
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "AC---GTTAAGGGGT",
+      "Seq2": "ACGAA---------T"
+    },
+    "weight": 0.045922,
+    "log_weight": -3.08081
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "AC---GTTAAGGGGT",
+      "Seq2": "ACGAA---------T"
+    },
+    "weight": 0.045922,
+    "log_weight": -3.08081
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG------AAT"
+    },
+    "weight": 0.0749673,
+    "log_weight": -2.5907
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG------AAT"
+    },
+    "weight": 0.0749673,
+    "log_weight": -2.5907
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "AC---GTTAAGGGGT",
+      "Seq2": "ACGAA---------T"
+    },
+    "weight": 0.045922,
+    "log_weight": -3.08081
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG------AAT"
+    },
+    "weight": 0.0749673,
+    "log_weight": -2.5907
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG---A---AT"
+    },
+    "weight": 0.00807844,
+    "log_weight": -4.81856
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "AC---GTTAAGGGGT",
+      "Seq2": "ACGAA---------T"
+    },
+    "weight": 0.045922,
+    "log_weight": -3.08081
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "AC---GTTAAGGGGT",
+      "Seq2": "ACGAA---------T"
+    },
+    "weight": 0.045922,
+    "log_weight": -3.08081
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG---A---AT"
+    },
+    "weight": 0.00807844,
+    "log_weight": -4.81856
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG------AAT"
+    },
+    "weight": 0.0749673,
+    "log_weight": -2.5907
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "AC---GTTAAGGGGT",
+      "Seq2": "ACGAA---------T"
+    },
+    "weight": 0.045922,
+    "log_weight": -3.08081
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT---",
+      "Seq2": "AC---------GAAT"
+    },
+    "weight": 0.000171474,
+    "log_weight": -8.67108
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "ACG------AAT"
+    },
+    "weight": 0.0749673,
+    "log_weight": -2.5907
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  },
+  {
+    "aln": {
+      "Seq1": "AC---GTTAAGGGGT",
+      "Seq2": "ACGAA---------T"
+    },
+    "weight": 0.045922,
+    "log_weight": -3.08081
+  },
+  {
+    "aln": {
+      "Seq1": "ACGTTAAGGGGT",
+      "Seq2": "AC------GAAT"
+    },
+    "weight": 0.0751886,
+    "log_weight": -2.58776
+  },
+  {
+    "aln": {
+      "Seq1": "ACG---TTAAGGGGT",
+      "Seq2": "ACGAAT---------"
+    },
+    "weight": 0.76853,
+    "log_weight": -0.263276
+  }
+]

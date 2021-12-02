@@ -1,3 +1,5 @@
+setwd("~/Dropbox (ASU)/tmp_code")
+
 devtools::create("dotPlot")
 devtools::document(pkg="./dotPlot")
 devtools::load_all(path="./dotPlot")

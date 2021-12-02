@@ -6,15 +6,15 @@
 #' @export
 read_input = function(input_list) {
     # define data frame
-    data = data.frame(Seq1 = character(), Seq2 = character(), weight = double(), log_weight = double())
+    data = data.frame(Seq1 = character(), Seq2 = character())               #>>>>>>>>>>>>>>>>>>
 
     # if only one argument and is a dir, look for all fasta files inside dir
-    if(length(input_list) == 1 && dir.exists(input_list)) {
-        fasta_list = read_dir(input_list)
+    if(dir.exists(input_list)) {
+        fasta_list = read_dir(input_list)                                   #>>>>>>>>>>>>>>>>>>>>
         if(length(fasta_list) > 0) {
             input_list = fasta_list
         } else {
-            stop("No fasta files found in input directory.")
+            stop("No fasta files found in current directory.")
         }
     }
 
@@ -111,28 +111,29 @@ create_plot = function(mat, aln, use_ggplot = FALSE) {
 
 
 ################################################################################
-# helper functions
+#Helper functions
 
-# Find all fasta files in `dir_path` and return the list of files
+#find all fasta files in `dir_path` and return a list of files
 read_dir = function(dir_path) {
-    files = list.files(path = dir_path, pattern = "\\.fasta$", full.names = TRUE)
-    files = append(files, list.files(path = dir_path, pattern = "\\.fa$", full.names = TRUE))
+    files = list.files(path = dir_path, full.names = TRUE)                #>>>>>>>>>>>>>>>>>>>
     files
 }
 
-# read json file (coati-sample output format) and return as data frame
+#read fasta file and return as vector
+read_fasta = function(fasta_path) {
+  data  = data.frame(Seq1 = character(), Seq2 = character())
+  fasta = seqinr::read.fasta(fasta_path, set.attributes = FALSE)
+  seq1  =  paste(stringr::str_to_upper(fasta[[1]]), collapse = "")
+  seq2  =  paste(stringr::str_to_upper(fasta[[2]]), collapse= "")
+  # follow data frame format: Seq1, Seq2, weight, log_weight
+  c(seq1, seq2, NA, NA)
+}
+
+#read json file (coati-sample output format) and return as data frame
 read_json = function(json_path) {
     data = jsonlite::fromJSON(json_path)
     data = data |> tidyr::unpack(aln)
     data
 }
 
-# read fasta file and return as vector
-read_fasta = function(fasta_path) {
-    data = data.frame(Seq1 = character(), Seq2 = character(), weight = double(), log_weight = double())
-    fasta = seqinr::read.fasta(fasta_path, set.attributes = FALSE)
-    seq1 =  paste(stringr::str_to_upper(fasta[[1]]), collapse = "")
-    seq2 =  paste(stringr::str_to_upper(fasta[[2]]), collapse= "")
-    # follow data frame format: Seq1, Seq2, weight, log_weight
-    c(seq1, seq2, NA, NA)
-}
+

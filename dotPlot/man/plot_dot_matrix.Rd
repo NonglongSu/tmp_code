@@ -5,7 +5,7 @@
 \title{Plot a dot matrix.
 This function plots a dot matrix as a raster image.}
 \usage{
-plot_dot_matrix(input, isDir = T)
+plot_dot_matrix(input)
 }
 \arguments{
 \item{filepath:}{either a directory contains all alignments (DNA/AA), or a json file}

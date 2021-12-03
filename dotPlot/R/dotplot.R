@@ -6,11 +6,11 @@
 #' @export
 read_input = function(input_list) {
     # define data frame
-    data = data.frame(Seq1 = character(), Seq2 = character())               #>>>>>>>>>>>>>>>>>>
+    data = data.frame(Seq1 = character(), Seq2 = character())              
 
     # if only one argument and is a dir, look for all fasta files inside dir
     if(dir.exists(input_list)) {
-        fasta_list = read_dir(input_list)                                   #>>>>>>>>>>>>>>>>>>>>
+        fasta_list = read_dir(input_list)                                   
         if(length(fasta_list) > 0) {
             input_list = fasta_list
         } else {
@@ -18,21 +18,21 @@ read_input = function(input_list) {
         }
     }
 
-    # read all fasta/json files
-    for(input in input_list) {
+    #read json files
+    for(input in input_list) {                                           #>>>>>>>>>>>>>>>>>>>>>>
         if(tools::file_ext(input) == "fasta" || tools::file_ext(input) == "fa") {
             # read fasta, concatenate to data frame
             data[nrow(data)+1, ] = read_fasta(input)
         } else if(tools::file_ext(input) == "json") {
             # read json, concatenate to data frame
-            data = rbind(data, read_json(input))
+            data = rbind(data, read_json(input))                           
         } else {
             stop("Input format not supported.")
         }
     }
 
-    # count unique alignments and return data frame
-    data = data |> dplyr::count(Seq1, Seq2)
+    #count unique alignments and return data frame
+    data = data %>% dplyr::count(Seq1, Seq2)                            
     data
 }
 
@@ -79,18 +79,18 @@ dot_matrix <- function(a, b, n=1) {
 #' @export
 plot_dot_matrix = function(input){
 
-    # read input
+    #read input
     aln = read_input(input)
 
-    # initialize matrix
+    #initialize matrix
     mat <- 0
 
-    # create dot matrix with all alignment paths
+    #create dot matrix with all alignment paths
     for(i in seq_len(nrow(aln))) {
       mat <- mat + dot_matrix(aln$Seq1[i], aln$Seq2[i], aln$n[i])
     }
 
-    # plot
+    #plot
     create_plot(mat, aln)
 }
 
@@ -114,26 +114,26 @@ create_plot = function(mat, aln, use_ggplot = FALSE) {
 #Helper functions
 
 #find all fasta files in `dir_path` and return a list of files
-read_dir = function(dir_path) {
-    files = list.files(path = dir_path, full.names = TRUE)                #>>>>>>>>>>>>>>>>>>>
-    files
+read_dir = function(dir_path) {    
+  files = list.files(path = dir_path, pattern = "\\.fasta$", full.names = TRUE)
+  files = append(files, list.files(path = dir_path, pattern = "\\.fa$", full.names = TRUE))
+  files
+}
+
+#read json file (coati-sample output format) and return as data frame
+read_json = function(json_path) { 
+    data = jsonlite::fromJSON(json_path)
+    data = data %>% tidyr::unpack(aln)
+    data
 }
 
 #read fasta file and return as vector
 read_fasta = function(fasta_path) {
-  data  = data.frame(Seq1 = character(), Seq2 = character())
+  data = data.frame(Seq1 = character(), Seq2 = character(), weight = double(), log_weight = double())
   fasta = seqinr::read.fasta(fasta_path, set.attributes = FALSE)
-  seq1  =  paste(stringr::str_to_upper(fasta[[1]]), collapse = "")
-  seq2  =  paste(stringr::str_to_upper(fasta[[2]]), collapse= "")
+  seq1 =  paste(stringr::str_to_upper(fasta[[1]]), collapse = "")
+  seq2 =  paste(stringr::str_to_upper(fasta[[2]]), collapse= "")
   # follow data frame format: Seq1, Seq2, weight, log_weight
   c(seq1, seq2, NA, NA)
 }
-
-#read json file (coati-sample output format) and return as data frame
-read_json = function(json_path) {
-    data = jsonlite::fromJSON(json_path)
-    data = data |> tidyr::unpack(aln)
-    data
-}
-
 

@@ -16,4 +16,8 @@ system.file('extdata','samples',package='dotPlot')
 #make vignettes
 #usethis::use_vignette("introduction")
 
+input1 = "dotPlot/inst/extdata/sample.json"
+input2 = "dotPlot/inst/extdata/samples"
+dotPlot::plot_dot_matrix(input1)
+dotPlot::plot_dot_matrix(input2)
 

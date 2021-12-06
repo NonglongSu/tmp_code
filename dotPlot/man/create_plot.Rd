@@ -4,7 +4,7 @@
 \alias{create_plot}
 \title{Plot dot matrix.}
 \usage{
-create_plot(mat, aln, use_ggplot = FALSE)
+create_plot(mat, aln, use_ggplot)
 }
 \arguments{
 \item{mat:}{dot matrix.}

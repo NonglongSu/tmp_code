@@ -5,10 +5,10 @@
 \title{Read input alignments.
 This function reads DNA/AA alignments from a file or directory.}
 \usage{
-read_input(input_list)
+read_input(input)
 }
 \arguments{
-\item{file_path:}{list of paths to json/fasta files or path to directory containing fasta alignments.}
+\item{file_path:}{path to directory containing fasta alignments or path to json file.}
 }
 \value{
 data frame with unique alignments and count.

@@ -125,7 +125,6 @@ read_json = function(json_path) {
 
 # read fasta file and return as vector
 read_fasta = function(fasta_path) {
-    data = data.frame(Seq1 = character(), Seq2 = character(), weight = double(), log_weight = double())
     fasta = seqinr::read.fasta(fasta_path, set.attributes = FALSE, as.string = TRUE, forceDNAtolower = FALSE)
     seq1 =  stringr::str_to_upper(fasta[[1]])
     seq2 =  stringr::str_to_upper(fasta[[2]])

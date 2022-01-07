@@ -1,8 +1,9 @@
+library(tidyverse)
 setwd("~/Dropbox (ASU)/tmp_code")
 
 devtools::create("dotPlot")
 devtools::document(pkg="./dotPlot")
-devtools::load_all(path="./dotPlot")
+devtools::load_all(path="./dotPlot",export_all=F)
 
 #make bibary data available
 x = 1:10
@@ -16,8 +17,14 @@ system.file('extdata','samples',package='dotPlot')
 #make vignettes
 #usethis::use_vignette("introduction")
 
+#testing funcs
 input1 = "dotPlot/inst/extdata/sample.json"
 input2 = "dotPlot/inst/extdata/samples"
+
 dotPlot::plot_dot_matrix(input1)
-dotPlot::plot_dot_matrix(input2)
+dotPlot::plot_dot_matrix(input2,TRUE)
+
+dotPlot::generate_dot_matrix(input1)
+
+
 

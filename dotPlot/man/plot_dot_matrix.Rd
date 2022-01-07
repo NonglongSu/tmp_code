@@ -2,20 +2,18 @@
 % Please edit documentation in R/dotplot.R
 \name{plot_dot_matrix}
 \alias{plot_dot_matrix}
-\title{Plot a dot matrix.
-This function plots a dot matrix as a raster image.}
+\title{This function plots a dot matrix as a raster image.}
 \usage{
-plot_dot_matrix(input)
+plot_dot_matrix(input, use_ggplot = FALSE)
 }
 \arguments{
-\item{filepath:}{either a directory contains all alignments (DNA/AA), or a json file}
+\item{filepath:}{either a directory contains all alignments (DNA/AA), or a json fil contains all alignments of a single raw DNA/AA sequence.}
 
-\item{isDir:}{\code{TRUE} or \code{FALSE}. It is true by default that our filepath is a directory. otherwise, it is a json format.}
+\item{use_ggplot:}{\code{TRUE} or \code{FALSE}. It is false by default. Otherwise, setup use_ggplot=TRUE which returns a raster ggplot.}
 }
 \value{
-A raster plot
+A raster plot.
 }
 \description{
-Plot a dot matrix.
 This function plots a dot matrix as a raster image.
 }

@@ -1,4 +1,44 @@
+<<<<<<< HEAD
 #' This functions takes all pairwise alignments and creates a dot matrix
+=======
+#' Read input alignments.
+#' This function reads DNA/AA alignments from a file or directory.
+#'
+#' @param file_path: path to directory containing fasta alignments or path to json file.
+#' @return data frame with unique alignments and count.
+#' @export
+read_input = function(input) {
+    # define data frame
+    data = data.frame(Seq1 = character(), Seq2 = character())
+
+    # if argument is a dir, look for all fasta files inside
+    if(dir.exists(input)) {
+        fasta_list = read_dir(input)
+        if(length(fasta_list) < 1) {
+            stop("No fasta files found in current directory.")
+        }
+
+        # read fasta files
+        for(input in fasta_list) {
+            # read fasta, concatenate to data frame
+            data[nrow(data)+1, ] = read_fasta(input)
+        }
+    } else if(tools::file_ext(input) == "json") {
+      # read json file
+      data = read_json(input)
+    } else {
+      stop("Input format not supported.")
+    }
+
+    # check that all alignments without gaps are identical
+    # count unique alignments and return data frame
+    data = data %>% dplyr::count(Seq1, Seq2)
+    data
+}
+
+#' Convert alignment to dot matrix.
+#' This functions takes a pairwise alignment and creates a dot matrix
+>>>>>>> 74404e0ba7aa714287d2d02a4c0ec656c89aa184
 #' representing the alignment's path.
 #' @param filepath: either a directory contains all alignments (DNA/AA), or a json file contains all alignments of a single raw DNA/AA sequence.
 #' @return a single dot matrix.
@@ -22,17 +62,22 @@ generate_dot_matrix = function(input){
 #' @param  use_ggplot: `TRUE` or `FALSE`. It is false by default. Otherwise, setup use_ggplot=TRUE which returns a raster ggplot. 
 #' @return A raster plot.
 #' @export
+<<<<<<< HEAD
 plot_dot_matrix = function(input,use_ggplot=FALSE){
 
   aln = read_input(input)
   mat = generate_dot_matrix(input)
   create_plot(mat, aln, use_ggplot)
 }
+=======
+plot_dot_matrix = function(input, use_ggplot = FALSE){
+>>>>>>> 74404e0ba7aa714287d2d02a4c0ec656c89aa184
 
 #generate a data.frame (need to consult reed!)
 
 
 
+<<<<<<< HEAD
 
 ################################################################################
 #Helper functions
@@ -61,6 +106,24 @@ dot_matrix <- function(a,b,n=1) {
   m[ai,bi] <- n
   m
 }
+=======
+    #plot
+    create_plot(mat, aln, use_ggplot)
+}
+
+#' Plot dot matrix.
+#'
+#' @param mat: dot matrix.
+#' @param use_ggplot: logical. If TRUE, plot using ggplot2 package. Otherwise use base-R function.
+#' @return A raster plot
+#' @export
+create_plot = function(mat, aln, use_ggplot) {
+    #if(!use_ggplot) {
+    plot(as.raster(1-mat/sum(aln$n)), interpolate = FALSE)
+    #} # else {
+      # use ggplot2 package
+    # }
+>>>>>>> 74404e0ba7aa714287d2d02a4c0ec656c89aa184
 
 #plot dot matrix
 create_plot = function(mat,aln,use_ggplot) {
@@ -81,6 +144,7 @@ create_plot = function(mat,aln,use_ggplot) {
   
 }
 
+<<<<<<< HEAD
 
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>reading funcs
 #read the DNA/AA alignments from a file or directory
@@ -115,28 +179,39 @@ read_input = function(input_list) {
   data = data %>% dplyr::count(Seq1, Seq2)                            
   data
 }
+=======
+################################################################################
+# Helper functions
+>>>>>>> 74404e0ba7aa714287d2d02a4c0ec656c89aa184
 
-#find all fasta files in `dir_path` and return a list of files
-read_dir = function(dir_path) {    
-  files = list.files(path = dir_path, pattern = "\\.fasta$", full.names = TRUE)
-  files = append(files, list.files(path = dir_path, pattern = "\\.fa$", full.names = TRUE))
-  files
+# find all fasta files in `dir_path` and return a list of files
+read_dir = function(dir_path) {
+    files = list.files(path = dir_path, pattern = "\\.fasta$", full.names = TRUE)
+    files = append(files, list.files(path = dir_path, pattern = "\\.fa$", full.names = TRUE))
+    files
 }
 
-#read json file (coati-sample output format) and return as data frame
-read_json = function(json_path) { 
+# read json file (coati-sample output format) and return as data frame
+read_json = function(json_path) {
     data = jsonlite::fromJSON(json_path)
     data = data %>% tidyr::unpack(aln)
-    data
+    data[c("Seq1", "Seq2")]
 }
 
-#read fasta file and return as vector
+# read fasta file and return as vector
 read_fasta = function(fasta_path) {
-  data = data.frame(Seq1 = character(), Seq2 = character(), weight = double(), log_weight = double())
-  fasta = seqinr::read.fasta(fasta_path, set.attributes = FALSE)
-  seq1 =  paste(stringr::str_to_upper(fasta[[1]]), collapse = "")
-  seq2 =  paste(stringr::str_to_upper(fasta[[2]]), collapse= "")
-  # follow data frame format: Seq1, Seq2, weight, log_weight
-  c(seq1, seq2, NA, NA)
+    fasta = seqinr::read.fasta(fasta_path, set.attributes = FALSE, as.string = TRUE, forceDNAtolower = FALSE)
+    seq1 =  stringr::str_to_upper(fasta[[1]])
+    seq2 =  stringr::str_to_upper(fasta[[2]])
+    # follow data frame format: Seq1, Seq2, weight, log_weight
+    c(seq1, seq2)
 }
 
+# check that, after removing gaps, all alignments are identical
+check_seqs = function(data) {
+    seq1 = gsub(pattern = "-", replacement = "", x = data$Seq1[1])
+    seq2 = gsub(pattern = "-", replacement = "", x = data$Seq2[1])
+    for(i in seq(from = 2, to = nrow(data))) {
+        stopifnot(seq1 == gsub("-", "", data$Seq1[i]), seq2 == gsub("-", "", data$Seq2[i]))
+    }
+}

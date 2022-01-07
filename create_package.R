@@ -3,11 +3,7 @@ setwd("~/Dropbox (ASU)/tmp_code")
 
 devtools::create("dotPlot")
 devtools::document(pkg="./dotPlot")
-<<<<<<< HEAD
 devtools::load_all(path="./dotPlot",export_all=F)
-=======
-devtools::load_all(path="./dotPlot", export_all = FALSE)
->>>>>>> 74404e0ba7aa714287d2d02a4c0ec656c89aa184
 
 #make bibary data available
 x = 1:10

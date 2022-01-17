@@ -24,7 +24,8 @@ input2 = "dotPlot/inst/extdata/samples"
 dotPlot::plot_dot_matrix(input1)
 dotPlot::plot_dot_matrix(input2,TRUE)
 
-dotPlot::generate_dot_matrix(input1)
+m0 = dotPlot::generate_dot_matrix(input1)
+dotPlot::matrix_to_dataframe(m0)
 
 
 

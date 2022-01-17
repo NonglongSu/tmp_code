@@ -7,7 +7,7 @@
 plot_dot_matrix(input, use_ggplot = FALSE)
 }
 \arguments{
-\item{filepath:}{either a directory contains all alignments (DNA/AA), or a json fil contains all alignments of a single raw DNA/AA sequence.}
+\item{filepath:}{either a directory contains all alignments (DNA/AA), or a json file contains all alignments of a single raw DNA/AA sequence.}
 
 \item{use_ggplot:}{\code{TRUE} or \code{FALSE}. It is false by default. Otherwise, setup use_ggplot=TRUE which returns a raster ggplot.}
 }

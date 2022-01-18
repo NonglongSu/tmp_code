@@ -29,10 +29,15 @@ plot_dot_matrix = function(input,use_ggplot=FALSE){
   create_plot(mat, aln, use_ggplot)
 }
 
-#' Produce a data frame given a dot matrix. The dot matrix can be gnerated by generate_dot_matrix(). 
+#' Produce a data frame given a dot matrix.
+#' The dot matrix can be gnerated by generate_dot_matrix().
+#'
+#' Within the output dataframe, the integer values in either columns indicate
+#'  where the real match/gap occurs, the non-integer values indicates the locus
+#'  of potential insertion space.
 #'
 #' @param mat: dot matrix.
-#' @return a data frame (Within the dataframe, The integeter values in either columns indiciate where the real match/gap occurs, the non-integer values indicates the locus of potential insertion space.)
+#' @return a data frame.
 #' @export
 matrix_to_dataframe <- function(mat) {
   nrows = nrow(mat)
@@ -42,16 +47,16 @@ matrix_to_dataframe <- function(mat) {
   #coordinates for seq1 & seq2
   #seq1: increments of 0.5, each repeated by number of columns
   #seq2: increments of 0.5, repeated overall by number of rows
-  seq1 = seq(from=0.5, by=0.5, length.out=nrows)
-  seq1 = rep(seq1, each=ncols)
-  seq2 = seq(from=0.5, by=0.5, length.out=ncols)
-  seq2 = rep(seq2, times=nrows)
+  seq1 = seq(from = 0.5, by = 0.5, length.out = nrows)
+  seq1 = rep(seq1, each = ncols)
+  seq2 = seq(from = 0.5, by = 0.5, length.out = ncols)
+  seq2 = rep(seq2, times = nrows)
 
   #magnitude
   magnitude = c(mat)
 
   #data frame
-  data = data.frame(Seq1=seq1, Seq2=seq2, Magnitude=magnitude)
+  data = data.frame(Seq1 = seq1, Seq2 = seq2, Magnitude = magnitude)
   data
 }
 

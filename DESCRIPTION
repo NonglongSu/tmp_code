@@ -1,0 +1,37 @@
+Package: alnDotPlot
+Title: Dot plots of pairwise sequence alignments
+Version: 0.1.0
+Authors@R: 
+    person(given = "Reed",
+           family = "Cartwright",
+           role = c("aut", "cre"),
+           email = "reed@cartwright.ht",
+           comment = c(ORCID = "0000-0002-0837-9380"))
+    person(given = "Ziqi",
+           family = "Zhu",
+           role = c("aut", "cre"),
+           email = "sanluo1972@gmail.com")
+    person(given = "Juan J",
+           family = "Garcia Mesa",
+           role = c("aut", "cre"),
+           email = "juanjosegarciamesa@gmail.com")
+Description: Dot plots of pairwise sequence alignments.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Imports:
+  dplyr,
+  ggplot2,
+  grDevices,
+  jsonlite,
+  seqinr,
+  stringr,
+  tidyr
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr

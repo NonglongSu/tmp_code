@@ -21,8 +21,12 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(alnDotPlot)
-# load sample data
-sample_data = system.file("extdata", "1.fa". package = alnDotPlot)
+# load and plot fasta sample
+sample_data = system.file("extdata/samples", "1.fa", package = "alnDotPlot")
 plot_dot_matrix(sample_data)
+
+# load and plot json sample using ggplot
+sample_data = system.file("extdata", "sample.json", package = "alnDotPlot")
+plot_dot_matrix(input = sample_data, use_ggplot = TRUE)
 ```
 

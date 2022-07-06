@@ -8,7 +8,7 @@ The goal of alnDotPlot is to generate and plot dot matrices of pairwise sequence
 
 ## Installation
 
-You can install the development version of alnDotPlot from [GitHub](https://github.com/) with:
+You can install the development version of alnDotPlot from [GitHub](https://github.com/jgarciamesa/alnDotPlot) with:
 
 ``` r
 # install.packages("devtools")
@@ -17,7 +17,7 @@ devtools::install_github("jgarciamesa/alnDotPlot")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example on how to load and plot alignments.
 
 ``` r
 library(alnDotPlot)

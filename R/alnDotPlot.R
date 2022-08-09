@@ -60,7 +60,7 @@ matrix_to_dataframe <- function(mat) {
   seq2 = rep(seq2, times = nrows)
 
   #magnitude
-  magnitude = c(mat)
+  magnitude = c(t(mat))
 
   #data frame
   data = data.frame(Seq1 = seq1, Seq2 = seq2, Magnitude = magnitude)
